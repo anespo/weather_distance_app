@@ -35,7 +35,7 @@ def get_weather(city: str) -> Dict[str, Any]:
         logger.info(f"Fetching weather for {city}")
         
         # Get API key from environment variable or use the hardcoded one as fallback
-        api_key = os.environ.get("OPENWEATHER_API_KEY", "2507e1a8b68b126f473bff070c04a655")
+        api_key = os.environ.get("OPENWEATHER_API_KEY", "123455557777888899999999999")
         
         # Make the API call to OpenWeatherMap
         url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
